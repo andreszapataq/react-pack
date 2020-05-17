@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .Content {
@@ -26,7 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(var(--vh, 1vh) * 40);
+  height: 20vh;
   color: #fff;
   font-size: 77px;
   font-weight: 700;
@@ -34,6 +34,22 @@ body {
 
 .Write {
   background: #177E89;
+}
+
+.inputWrite {
+    border: 0;
+    border-bottom: 1.5px solid #fff;
+    outline: 0;
+    font-size: 33px;
+    text-align: center; 
+    color: #fff;
+    padding: 7px;
+    background: transparent;
+    border-radius: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #FFD2F5;
 }
 
 .Result {

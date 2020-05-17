@@ -1,30 +1,17 @@
 import React from 'react';
 
-function Write() {
-    /* state = {
-        name: ''
-    }
-
-    onChange = (e) => this.setState({ name: e.target.value }); */
+function Write(props) {
+    // const[isTrue, setIsTrue] = useState(false);
 
     return (
         <div className="Write">
-            <input 
+            <input
+                className="inputWrite" 
                 type="text"
-                name="name"
-                style={{ 
-                    border: '0', 
-                    borderBottom: '2px solid #fff', 
-                    outline: '0',
-                    fontSize: '33px',
-                    textAlign: 'center', 
-                    color: '#fff',
-                    padding: '7px',
-                    background: 'transparent'
-                }}
-                placeholder="Write your name..."
-                /* value={this.state.name}
-                onChange={this.onChange} */
+                name="greatName"
+                placeholder="Write your great name..."
+                // value={name}
+                onChange={props.handleMierda}
             />
         </div>
     )

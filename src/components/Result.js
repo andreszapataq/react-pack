@@ -1,10 +1,11 @@
 import React from 'react';
 
-function Result() {
+function Result(props) {
     return (
         <div className="Result">
           <p>
-              
+            {/* {props.perra} */}
+            {props.usuario}  
           </p>
         </div>
     )
